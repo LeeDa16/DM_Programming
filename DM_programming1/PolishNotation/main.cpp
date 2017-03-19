@@ -12,7 +12,7 @@ int main()
 	int len = s.size();
 	
 	struct BiTNode *p = CreateBiTree(s, 0, len - 1);
-
+	/*
 	cout << endl;
 	cout << "波兰表达式为：" << endl;
 	outPutPNotation(p);
@@ -24,6 +24,10 @@ int main()
 
 	cout << endl;
 	cout << endl;
-	
+	*/
+	freopen("PolishNotation_OutPut.txt", "w", stdout);
+	outPutPNotation(p);
+	cout << endl;
+	outPutReversePNotation(p);
 	return 0;
 }

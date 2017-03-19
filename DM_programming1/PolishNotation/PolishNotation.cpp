@@ -2,6 +2,10 @@
 
 void getString(string & s)
 {
+	ifstream fstrm("PolishNotation_InPut.txt");
+	getline(fstrm, s);
+	
+	/*
 	cout << "请输入一条中缀表达式：" << endl;
 	while (true)
 	{
@@ -26,7 +30,7 @@ void getString(string & s)
 			cout << endl;
 			cout << "输入表达式有误，请重新输入：" << endl;
 		}
-	}
+	}*/
 }
 
 int examine(string s)
